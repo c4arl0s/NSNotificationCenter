@@ -16,7 +16,7 @@ Kinds of communication:
 
 1. Define a constant string value
 2. Post a notification to NSNotificationCenter identified by the key name defined before.
-3. Set upt the class or struct instances to be observers of a particular notification.
+3. Set up the class or struct instance to be observers of a particular notification.
 4. Create a method to be called once a notification is received 
 
 
