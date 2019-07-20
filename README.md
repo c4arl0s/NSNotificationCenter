@@ -17,6 +17,7 @@ Kinds of communication:
 ### 3. Set up the class or struct instance to be observers of a particular notification.
 ### 4. Create a method to be called once a notification is received.
 
+
 ![notificationcenter_2x](https://user-images.githubusercontent.com/24994818/60770616-86e7e000-a0a2-11e9-8287-de8a9953b1ec.png)
 
  
