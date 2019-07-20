@@ -12,10 +12,10 @@ Kinds of communication:
 
 # Basic Workflow to use Notificacion Center
 
-1. Define a constant string value
-2. Post a notification to NSNotificationCenter identified by the key name defined before.
-3. Set up the class or struct instance to be observers of a particular notification.
-4. Create a method to be called once a notification is received.
+### 1. Define a constant string value
+### 2. Post a notification to NSNotificationCenter identified by the key name defined before.
+### 3. Set up the class or struct instance to be observers of a particular notification.
+### 4. Create a method to be called once a notification is received.
 
 ![notificationcenter_2x](https://user-images.githubusercontent.com/24994818/60770616-86e7e000-a0a2-11e9-8287-de8a9953b1ec.png)
 
