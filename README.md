@@ -59,6 +59,18 @@ NSString const SomeActionHappenedNotification = @"SomeActionIsComplete";
 }
 ```
 
+# Analyze this:
+
+``` objective-c
+// LogOTron
+// _token is an instance variable of type 'id'
+_token = [center addObserverForName: kNetworkWentByeByeNotification
+                 object: nil
+                 queue: [NSOperationQueue mainQueue]
+                 usingBlock: ^(NSNotification *notification) {
+                     NSLog (@"Network went down: %@", notification);
+                 }];
+```
 
  
 
