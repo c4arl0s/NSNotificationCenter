@@ -21,8 +21,13 @@ Kinds of communication:
 
 # 1. Define a constant string value.
 
+..header file..
 ``` objective-c
-NSString const *SomeActionIsCompleteNotification = @"SomeActionIsComplete";
+NSString* const SomeActionIsCompleteNotification;
+```
+
+``` objective-c
+NSString const SomeActionIsCompleteNotification = @"SomeActionIsComplete";
 ```
 
 
