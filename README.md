@@ -22,14 +22,14 @@ Kinds of communication:
 # 1. Define a constant string value.
 
 ``` objective-c
-NSString const *SomeActionIsCompleteKey = @"SomeActionIsComplete";
+NSString const *SomeActionIsCompleteNotification = @"SomeActionIsComplete";
 ```
 
 
 # 2. Post a notification to NSNotificationCenter identified by the key name defined before.
 
 ``` objective-c
-[[NSNotificationCenter defaultCenter] postNotificationName:SomeActionIsCompleteKey 
+[[NSNotificationCenter defaultCenter] postNotificationName:SomeActionIsCompleteNotification 
                                                     object:self 
                                                   userInfo:nil];
 ```
