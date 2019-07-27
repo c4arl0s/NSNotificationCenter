@@ -26,6 +26,9 @@ Kinds of communication:
 ``` objective-c
 [[NSNotificationCenter defaultCenter] postNotificationName:@”SomeActionIsComplete” object:nil userInfo:nil];
 ```
+
+# 3. Set up the class or struct instance to be observers of a particular notification.
+
 ``` objective-c
 [[NSNotificationCenter defaultCenter] addObserverForName:@”SomeActionIsComplete” object:nil queue:nil usingBlock:^(NSNotification *note)
 {
