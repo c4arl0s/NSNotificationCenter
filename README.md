@@ -30,7 +30,7 @@ NSString const *SomeActionIsCompleteKey = @"SomeActionIsComplete";
 
 ``` objective-c
 [[NSNotificationCenter defaultCenter] postNotificationName:SomeActionIsCompleteKey 
-                                                    object:nil 
+                                                    object:self 
                                                   userInfo:nil];
 ```
 
