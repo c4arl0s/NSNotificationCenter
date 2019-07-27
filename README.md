@@ -30,7 +30,8 @@ NSString const *SomeActionIsCompleteKey = @"SomeActionIsComplete";
 
 ``` objective-c
 [[NSNotificationCenter defaultCenter] postNotificationName:SomeActionIsCompleteKey 
-                                                    object:nil userInfo:nil];
+                                                    object:nil 
+                                                  userInfo:nil];
 ```
 
 # 3. Set up the class or struct instance to be observers of a particular notification.
