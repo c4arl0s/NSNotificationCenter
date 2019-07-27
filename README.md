@@ -30,14 +30,14 @@ NSString* const SomeActionIsCompleteNotification;
 into implementation file:
 
 ``` objective-c
-NSString const SomeActionIsCompleteNotification = @"SomeActionIsComplete";
+NSString const SomeActionHappenedNotification = @"SomeActionIsComplete";
 ```
 
 
 # 2. Post a notification to NSNotificationCenter identified by the key name defined before.
 
 ``` objective-c
-[[NSNotificationCenter defaultCenter] postNotificationName:SomeActionIsCompleteNotification 
+[[NSNotificationCenter defaultCenter] postNotificationName:SomeActionHappenedNotification 
                                                     object:self 
                                                   userInfo:nil];
 ```
@@ -45,8 +45,8 @@ NSString const SomeActionIsCompleteNotification = @"SomeActionIsComplete";
 # 3. Set up the class or struct instance to be observers of a particular notification.
 
 ``` objective-c
-[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SomeActionIsComplete:) 
-                                                           name:SomeActionIsCompleteNotification 
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SomeActionHappened:) 
+                                                           name:SomeActionHappenedNotification 
                                                          object:nil];
 }];
 ```
@@ -54,7 +54,7 @@ NSString const SomeActionIsCompleteNotification = @"SomeActionIsComplete";
 # 4. Create a method to be called once a notification is received.
 
 ``` objective-c
--(void)SomeActionIsComplete:(NSNotification *)notification {
+-(void)SomeActionHappened:(NSNotification *)notification {
     // Do something for SuperClass with the notification
 }
 ```
