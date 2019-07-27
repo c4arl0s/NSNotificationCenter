@@ -38,7 +38,7 @@ NSString const *SomeActionIsCompleteNotification = @"SomeActionIsComplete";
 
 ``` objective-c
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SomeActionIsComplete:) 
-                                                           name:SomeActionIsCompleteKey 
+                                                           name:SomeActionIsCompleteNotification 
                                                          object:nil];
 }];
 ```
