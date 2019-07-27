@@ -35,10 +35,7 @@ NSString const *SomeActionIsCompleteKey = @"SomeActionIsComplete";
 # 3. Set up the class or struct instance to be observers of a particular notification.
 
 ``` objective-c
-[[NSNotificationCenter defaultCenter] addObserverForName:SomeActionIsCompleteKey object:nil queue:nil usingBlock:^(NSNotification *note)
-{
-    NSLog(@”The action I was waiting for is complete!!!”);
-    [self dismissViewControllerAnimated:YES completion:nil];
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveMemoryCacheToDisk:) name:SomeActionIsCompleteKey object:nil];
 }];
 ```
 
