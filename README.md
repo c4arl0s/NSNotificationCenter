@@ -35,7 +35,7 @@ NSString const *SomeActionIsCompleteKey = @"SomeActionIsComplete";
 # 3. Set up the class or struct instance to be observers of a particular notification.
 
 ``` objective-c
-[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveMemoryCacheToDisk:) name:SomeActionIsCompleteKey object:nil];
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SomeActionIsComplete:) name:SomeActionIsCompleteKey object:nil];
 }];
 ```
 
