@@ -19,7 +19,9 @@ Kinds of communication:
 
 ![notificationcenter_2x](https://user-images.githubusercontent.com/24994818/60770616-86e7e000-a0a2-11e9-8287-de8a9953b1ec.png)
 
-# 1. Define a constant string value
+# 1. Define a constant string value.
+
+
 
 # 2. Post a notification to NSNotificationCenter identified by the key name defined before.
 
