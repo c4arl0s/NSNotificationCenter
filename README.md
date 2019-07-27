@@ -43,6 +43,14 @@ NSString const *SomeActionIsCompleteNotification = @"SomeActionIsComplete";
 }];
 ```
 
+# 4. Create a method to be called once a notification is received.
+
+``` objective-c
+-(void)SomeActionIsComplete:(NSNotification *)notification {
+    // Do something for SuperClass with the notification
+}
+```
+
 
  
 
